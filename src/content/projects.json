@@ -2,7 +2,7 @@
   {
     "id": "photographer",
     "url": "https://photo.myfreelab.ru",
-    "image": "",
+    "image": "/images/photographer.webp",
     "color": "#1D1B19",
     "watermark": "Фото",
     "stack": [
@@ -28,7 +28,7 @@
   {
     "id": "robotics-school",
     "url": "https://robotex.myfreelab.ru",
-    "image": "",
+    "image": "/images/robotics-school.webp",
     "color": "#1F3A5F",
     "watermark": "Робо",
     "stack": [
@@ -54,7 +54,7 @@
   {
     "id": "beauty-salon",
     "url": "https://salon.myfreelab.ru",
-    "image": "",
+    "image": "/images/beauty-salon.webp",
     "color": "#E7D3CB",
     "watermark": "Beauty",
     "light": true,
