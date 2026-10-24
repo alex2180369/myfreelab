@@ -1,0 +1,83 @@
+[
+  {
+    "id": "photographer",
+    "url": "https://photo.myfreelab.ru",
+    "image": "",
+    "color": "#1D1B19",
+    "watermark": "Фото",
+    "stack": [
+      "React",
+      "Vite",
+      "CSS"
+    ],
+    "ru": {
+      "kicker": "Сайт-визитка",
+      "title": "Фотограф",
+      "lead": "Сайт, где главное — снимки: крупная галерея, услуги с ценами и быстрая запись на съёмку.",
+      "task": "Фотографу нужен сайт-портфолио, который не мешает снимкам и ведёт к записи на съёмку.",
+      "solution": "Крупная галерея, пакеты с ценами и форма заявки. Фото в WebP двух размеров и свои шрифты, поэтому страница открывается быстро. Все данные лежат в отдельных файлах, и заказчик может поменять их сам."
+    },
+    "en": {
+      "kicker": "Business card site",
+      "title": "Photographer",
+      "lead": "A site where the photos come first: a large gallery, services with prices and quick booking.",
+      "task": "A photographer needs a portfolio site that lets the pictures speak and leads to a booking.",
+      "solution": "A large gallery, priced packages and a request form. Photos are WebP in two sizes and fonts are self-hosted, so the page loads fast. All data sits in separate files, so the client can edit it."
+    }
+  },
+  {
+    "id": "robotics-school",
+    "url": "https://robotex.myfreelab.ru",
+    "image": "",
+    "color": "#1F3A5F",
+    "watermark": "Робо",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "ru": {
+      "kicker": "Лендинг",
+      "title": "Школа робототехники для детей",
+      "lead": "Лендинг, который говорит с родителями: программы по возрастам, расписание и запись на пробное занятие.",
+      "task": "Школе робототехники для детей 6–10 лет нужна одна страница, которая убедит родителей записаться на пробное занятие.",
+      "solution": "Два экрана: сначала польза для ребёнка, затем процесс обучения и цена. Запись идёт через окно с Яндекс Формой, своего сервера не нужно. Сайт работает без сборки: открыл файл, и всё готово."
+    },
+    "en": {
+      "kicker": "Landing page",
+      "title": "Robotics school for kids",
+      "lead": "A landing page that speaks to parents: programmes by age, schedule and a trial lesson sign-up.",
+      "task": "A robotics school for kids aged 6–10 needs one page that convinces parents to book a trial lesson.",
+      "solution": "Two screens: first the benefits for the child, then the learning process and price. Booking goes through a Yandex Form modal, so no server is needed. The site needs no build step: open the file and it works."
+    }
+  },
+  {
+    "id": "beauty-salon",
+    "url": "https://salon.myfreelab.ru",
+    "image": "",
+    "color": "#E7D3CB",
+    "watermark": "Beauty",
+    "light": true,
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Node.js",
+      "SQLite"
+    ],
+    "ru": {
+      "kicker": "Сайт услуг",
+      "title": "Салон красоты",
+      "lead": "Сайт, который продаёт атмосферу: мастера, прайс по услугам, отзывы и онлайн-запись в пару касаний.",
+      "task": "Салону нужно цифровое меню: напитки, услуги и товары в одном месте, а гость может собрать запрос администратору.",
+      "solution": "Каталог с фильтрами, корзина-черновик, чаевые и комментарии. В полной версии заявки уходят администратору в Telegram и в панель на Node.js и SQLite. Здесь показана статичная витрина."
+    },
+    "en": {
+      "kicker": "Services website",
+      "title": "Beauty salon",
+      "lead": "A site that sells the atmosphere: stylists, price list, reviews and online booking in a couple of taps.",
+      "task": "A salon needs a digital menu: drinks, services and products in one place, and guests can compose a request for the administrator.",
+      "solution": "A catalogue with filters, a draft cart, tips and comments. The full version sends requests to the administrator in Telegram and to a Node.js and SQLite panel. This is the static showcase."
+    }
+  }
+]

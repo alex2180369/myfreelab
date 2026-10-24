@@ -1,0 +1,240 @@
+{
+  "contacts": {
+    "telegram": "AlexAn_369",
+    "email": "alex2180369@gmail.com"
+  },
+  "ru": {
+    "issue": "Выпуск №01 · Осень 2026 · myfreelab.ru",
+    "langLabel": "Язык сайта",
+    "name": "Алексей Ан",
+    "nav": {
+      "services": "Услуги",
+      "work": "Работы",
+      "process": "Как работаю",
+      "about": "Обо мне",
+      "contact": "Контакты"
+    },
+    "cta": "Обсудить проект",
+    "hero": {
+      "kicker": "Главная тема номера",
+      "titleStart": "Сайты, тексты и боты, которые",
+      "titleAccent": "продают",
+      "lead": "Помогаю малому бизнесу выглядеть в интернете дорого: делаю лендинги, карточки для маркетплейсов, продающие тексты и чат-боты.",
+      "primary": "Смотреть работы",
+      "secondary": "Написать в Telegram",
+      "coverLine": "В номере: три кейса, четыре услуги и честный рассказ о том, как мы будем работать."
+    },
+    "services": {
+      "title": "Содержание",
+      "meta": "Услуги и цены",
+      "from": "от",
+      "currency": "₽",
+      "items": [
+        {
+          "title": "Тексты",
+          "text": "Продающие тексты для сайтов, соцсетей и рассылок. Пишу так, чтобы клиент понял выгоду за пять секунд. Цена за страницу.",
+          "price": "1 500"
+        },
+        {
+          "title": "Карточки для маркетплейсов",
+          "text": "Инфографика и описания для Wildberries и Ozon: выделяем товар в выдаче и отвечаем на вопросы покупателя до того, как он их задаст. Цена за одну карточку.",
+          "price": "400"
+        },
+        {
+          "title": "Лендинги",
+          "text": "Одностраничные сайты под ключ: структура, тексты, дизайн, вёрстка, домен и HTTPS. Цена за сайт целиком.",
+          "price": "24 000"
+        },
+        {
+          "title": "Чат-боты",
+          "text": "Telegram-боты для записи, приёма заявок и ответов на частые вопросы. Работают круглосуточно. Простой бот под ключ.",
+          "price": "2 500"
+        }
+      ]
+    },
+    "work": {
+      "title": "Избранные работы",
+      "meta": "Кейсы",
+      "case": "Кейс",
+      "task": "Задача",
+      "solution": "Решение",
+      "stack": "Стек",
+      "open": "Открыть сайт",
+      "soon": "Скоро онлайн",
+      "screenshot": "Скриншот сайта"
+    },
+    "quote": {
+      "text": "«Хороший сайт не уговаривает доверять. Он сразу показывает, почему можно»",
+      "author": "Алексей Ан"
+    },
+    "process": {
+      "title": "Как я работаю",
+      "meta": "Четыре шага",
+      "steps": [
+        {
+          "title": "Знакомство",
+          "text": "Созваниваемся или переписываемся: обсуждаем задачу, примеры, сроки и бюджет."
+        },
+        {
+          "title": "Структура и тексты",
+          "text": "Собираю прототип и пишу тексты. Согласуем смысл до того, как рисовать."
+        },
+        {
+          "title": "Дизайн и разработка",
+          "text": "Делаю дизайн и вёрстку, показываю промежуточный результат, вношу правки."
+        },
+        {
+          "title": "Запуск",
+          "text": "Подключаю домен, HTTPS и аналитику. Передаю доступы и объясняю, как всё устроено."
+        }
+      ]
+    },
+    "about": {
+      "kicker": "Интервью номера",
+      "title": "Привет, я Алексей",
+      "photo": "Ваше фото",
+      "paragraphs": [
+        "Я собираю сайты, пишу к ним тексты и настраиваю Telegram-ботов для малого бизнеса. Всё, что вы видите выше, сделано мной от первой идеи до рабочего адреса в интернете.",
+        "Я ещё учусь, и это честно отражено в ценах: они ниже рыночных. Взамен вы получаете внимание, а не очередь. Отвечаю быстро, объясняю простыми словами и не прячусь за терминами.",
+        "Люблю, когда у проекта есть характер. Фотографу нужна тишина вокруг снимков, детской школе нужна энергия, салону нужно спокойствие. Скучные шаблоны оставляю тем, кто любит скучные шаблоны. А кофе у меня всегда под рукой, на случай сложных правок."
+      ],
+      "image": ""
+    },
+    "contact": {
+      "titleStart": "Расскажите",
+      "titleAccent": "о задаче",
+      "lead": "Отвечу в течение дня. Если задача пока не сформулирована — это нормально, разберёмся вместе.",
+      "name": "Имя",
+      "namePh": "Как к вам обращаться",
+      "contact": "Telegram или телефон",
+      "contactPh": "@username",
+      "message": "Что нужно сделать",
+      "messagePh": "Например: лендинг для студии маникюра",
+      "send": "Отправить заявку",
+      "telegram": "Telegram",
+      "email": "Почта",
+      "sending": "Отправляю…",
+      "ok": "Спасибо! Заявка отправлена, скоро отвечу.",
+      "fail": "Не получилось отправить. Напишите, пожалуйста, в Telegram.",
+      "mailHint": "Откроется почтовая программа с готовым письмом."
+    },
+    "footer": "© 2026 Алексей Ан"
+  },
+  "en": {
+    "issue": "Issue No.01 · Autumn 2026 · myfreelab.ru",
+    "langLabel": "Site language",
+    "name": "Alexey An",
+    "nav": {
+      "services": "Services",
+      "work": "Work",
+      "process": "Process",
+      "about": "About",
+      "contact": "Contact"
+    },
+    "cta": "Discuss a project",
+    "hero": {
+      "kicker": "Cover story",
+      "titleStart": "Websites, copy and bots that",
+      "titleAccent": "sell",
+      "lead": "I help small businesses look premium online: landing pages, marketplace product cards, sales copy and chatbots.",
+      "primary": "See the work",
+      "secondary": "Message on Telegram",
+      "coverLine": "In this issue: three case studies, four services and an honest look at how we'll work together."
+    },
+    "services": {
+      "title": "Contents",
+      "meta": "Services & prices",
+      "from": "from",
+      "currency": "₽",
+      "items": [
+        {
+          "title": "Copywriting",
+          "text": "Sales copy for websites, social media and newsletters — so a customer sees the benefit in five seconds. Price per page.",
+          "price": "1 500"
+        },
+        {
+          "title": "Marketplace product cards",
+          "text": "Infographics and descriptions for Wildberries and Ozon that stand out in search and answer buyers' questions upfront. Price per card.",
+          "price": "400"
+        },
+        {
+          "title": "Landing pages",
+          "text": "Turnkey one-page sites: structure, copy, design, development, domain and HTTPS. Price for the whole site.",
+          "price": "24 000"
+        },
+        {
+          "title": "Chatbots",
+          "text": "Telegram bots for bookings, leads and FAQs. They work around the clock. A simple turnkey bot.",
+          "price": "2 500"
+        }
+      ]
+    },
+    "work": {
+      "title": "Selected work",
+      "meta": "Case studies",
+      "case": "Case",
+      "task": "Task",
+      "solution": "Solution",
+      "stack": "Stack",
+      "open": "Open site",
+      "soon": "Coming online soon",
+      "screenshot": "Site screenshot"
+    },
+    "quote": {
+      "text": "“A good website doesn't ask for trust. It shows you right away why you can.”",
+      "author": "Alexey An"
+    },
+    "process": {
+      "title": "How I work",
+      "meta": "Four steps",
+      "steps": [
+        {
+          "title": "Intro",
+          "text": "A call or a chat: we discuss the task, examples, timeline and budget."
+        },
+        {
+          "title": "Structure & copy",
+          "text": "I build a prototype and write the copy. We agree on meaning before design."
+        },
+        {
+          "title": "Design & build",
+          "text": "I design and develop the site, share progress and make revisions."
+        },
+        {
+          "title": "Launch",
+          "text": "I set up the domain, HTTPS and analytics, hand over access and explain how it all works."
+        }
+      ]
+    },
+    "about": {
+      "kicker": "The interview",
+      "title": "Hi, I'm Alexey",
+      "photo": "Your photo",
+      "paragraphs": [
+        "I build websites, write the copy for them and set up Telegram bots for small businesses. Everything you see above is my work, from the first idea to a live address on the internet.",
+        "I'm still learning, and my prices honestly reflect that: they are below the market. In return you get attention instead of a queue. I reply fast, explain things in plain words and don't hide behind jargon.",
+        "I like projects that have character. A photographer needs quiet around the pictures, a kids' school needs energy, a salon needs calm. I leave boring templates to people who like boring templates. And there's always coffee within reach, just in case of tricky revisions."
+      ],
+      "image": ""
+    },
+    "contact": {
+      "titleStart": "Tell me",
+      "titleAccent": "about your task",
+      "lead": "I reply within a day. If the task isn't fully defined yet, that's fine — we'll figure it out together.",
+      "name": "Name",
+      "namePh": "How should I address you",
+      "contact": "Telegram or phone",
+      "contactPh": "@username",
+      "message": "What needs to be done",
+      "messagePh": "E.g. a landing page for a nail studio",
+      "send": "Send request",
+      "telegram": "Telegram",
+      "email": "Email",
+      "sending": "Sending…",
+      "ok": "Thanks! Your request is sent, I'll reply soon.",
+      "fail": "Couldn't send it. Please message me on Telegram.",
+      "mailHint": "Your email app will open with the message ready."
+    },
+    "footer": "© 2026 Alexey An"
+  }
+}
