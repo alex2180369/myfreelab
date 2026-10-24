@@ -7,8 +7,8 @@
   --accent-soft: #e8a3ae;
   --dark-muted: #cfcbc2;
   --dark-line: #3a3a36;
-  --serif: 'Playfair Display', Georgia, 'Times New Roman', serif;
-  --sans: 'Manrope', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --serif: 'Playfair Display Variable', Georgia, 'Times New Roman', serif;
+  --sans: 'Manrope Variable', system-ui, -apple-system, 'Segoe UI', sans-serif;
 }
 
 *, *::before, *::after { box-sizing: border-box; }
