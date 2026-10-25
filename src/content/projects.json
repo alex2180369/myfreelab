@@ -79,5 +79,50 @@
       "task": "A salon needs a digital menu: drinks, services and products in one place, and guests can compose a request for the administrator.",
       "solution": "A catalogue with filters, a draft cart, tips and comments. The full version sends requests to the administrator in Telegram and to a Node.js and SQLite panel. This is the static showcase."
     }
+  },
+  {
+    "id": "trading-club",
+    "url": "https://club.myfreelab.ru",
+    "image": "",
+    "color": "#1a1030",
+    "watermark": "Club",
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "ru": {
+      "kicker": "Презентационный сайт",
+      "title": "Международный трейдинг-клуб",
+      "lead": "Премиальная страница в чёрном и золотом: клуб, программы, цифры и вступление без обещаний прибыли.",
+      "task": "Заказчику нужен презентационный сайт клуба в стиле «старые деньги»: десять блоков, доверие и вступление в клуб.",
+      "solution": "Десять блоков по ТЗ, правила риска вместо громких обещаний, три программы и форма заявки в Google Таблицу. Шрифты свои, всё работает без сборки."
+    },
+    "en": {
+      "kicker": "Presentation site",
+      "title": "International trading club",
+      "lead": "A premium black and gold page: the club, programmes, figures and joining, with no profit promises.",
+      "task": "The client needs a presentation site for a club in an old-money style: ten blocks, trust and joining the club.",
+      "solution": "Ten blocks as in the brief, risk rules instead of loud promises, three programmes and a lead form that writes to Google Sheets. Self-hosted fonts, no build step."
+    }
+  },
+  {
+    "id": "psychology-support",
+    "url": "https://psy.myfreelab.ru",
+    "image": "",
+    "color": "#dfe9e2",
+    "watermark": "Опора",
+    "light": true,
+    "stack": ["HTML", "CSS", "JavaScript"],
+    "ru": {
+      "kicker": "Сайт курса",
+      "title": "Психологическая поддержка",
+      "lead": "Тёплая светлая страница курса на четыре недели: практики, группа и запись на бесплатную встречу.",
+      "task": "Заказчику нужен сайт психологической помощи на восемь блоков с реальными методами поддержки и курсом.",
+      "solution": "Восемь блоков, понятные практики вместо общих слов, программа по неделям и бережные оговорки. Курс не заменяет медицинскую помощь, это сказано на странице."
+    },
+    "en": {
+      "kicker": "Course website",
+      "title": "Psychological support",
+      "lead": "A warm, light page for a four-week course: practices, a group and a free intro meeting.",
+      "task": "The client needs a psychological support site of eight blocks with real support methods and a course.",
+      "solution": "Eight blocks, concrete practices instead of vague words, a week-by-week programme and careful disclaimers. The course does not replace medical care, and the page says so."
+    }
   }
 ]
