@@ -83,7 +83,7 @@
   {
     "id": "trading-club",
     "url": "https://club.myfreelab.ru",
-    "image": "",
+    "image": "/images/trading-club.webp",
     "color": "#1a1030",
     "watermark": "Club",
     "stack": ["HTML", "CSS", "JavaScript"],
@@ -105,7 +105,7 @@
   {
     "id": "psychology-support",
     "url": "https://psy.myfreelab.ru",
-    "image": "",
+    "image": "/images/psychology-support.webp",
     "color": "#dfe9e2",
     "watermark": "Опора",
     "light": true,
