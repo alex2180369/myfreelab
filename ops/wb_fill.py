@@ -183,6 +183,25 @@ ALT = {
 }
 
 FL = "https://www.fl.ru/"
+LINKS = {
+    1: "https://photo.myfreelab.ru",
+    2: "https://robotex.myfreelab.ru",
+    3: "https://salon.myfreelab.ru",
+}
+
+
+def set_case_link(tc, url):
+    """Writes the live-site link under the label in the case card (adds the paragraph if it is missing)."""
+    paras = kids(tc, "p")
+    if len(paras) >= 2:
+        set_lines(tc, [url], para_index=1)
+        return
+    para = make_para(paras[0], url)
+    for run in kids(para, "r"):
+        for rpr in kids(run, "rPr"):
+            for b in kids(rpr, "b") + kids(rpr, "bCs"):
+                rpr.removeChild(b)
+    tc.appendChild(para)
 
 CONTENT = {
     4: {
@@ -420,6 +439,8 @@ for el in body_children:
     # summary table
     if label.strip() == "№" and not summary_done:
         summary_done = True
+        for n in (1, 2, 3):
+            set_value(el, n, 5, LINKS[n])
         for n in (4, 5):
             c = CONTENT[n]
             vals = [FL, c["task"], c["budget"], None, c["url"]]
@@ -443,12 +464,17 @@ for el in body_children:
                 if key in SHOTS:
                     put_picture(tc, SHOTS[key], ALT[key])
 
-    if work in (1, 2) and label == "Поля формы":
+    if work in (1, 2, 3) and label == "Поля формы":
         if work == 1:
             set_value(el, 1, 1, "Google Таблица, лист photo (таблица «Заявки myfreelab»)")
         else:
             set_value(el, 0, 1, "Name / Surname / Email (на английском)")
             set_value(el, 1, 1, "Google Таблица, лист robotex (таблица «Заявки myfreelab»). Форма на странице сайта, данные только на английском")
+        set_value(el, 2, 1, LINKS[work])
+        continue
+
+    if work in (1, 2, 3) and label.startswith("Задача заказчика") and len(rows) == 3:
+        set_case_link(cell(el, 1, 1), LINKS[work])
         continue
 
     if work not in (4, 5):
