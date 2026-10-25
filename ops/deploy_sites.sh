@@ -12,7 +12,7 @@ fi
 OWNER_HOME="/home/mylab"
 STAGING="$OWNER_HOME/staging"
 EMAIL="alex2180369@gmail.com"
-SITES="robotex salon"
+SITES="robotex salon club psy"
 
 for name in $SITES; do
   host="$name.myfreelab.ru"
