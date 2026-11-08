@@ -1,29 +1,116 @@
 [
   {
-    "id": "photographer",
-    "url": "https://photo.myfreelab.ru",
-    "image": "/images/photographer.webp",
-    "color": "#1D1B19",
-    "watermark": "Фото",
-    "stack": [
-      "React",
-      "Vite",
-      "CSS"
-    ],
+    "id": "card-studio",
+    "group": "sales",
+    "url": "https://studio.myfreelab.ru",
+    "image": "/images/card-studio.webp",
+    "color": "#1c2b1f",
+    "watermark": "AI",
+    "stack": ["FastAPI", "React", "Docker", "GPT Image 2.5"],
     "ru": {
-      "kicker": "Сайт-визитка",
-      "title": "Фотограф",
-      "lead": "Сайт, где главное — снимки: крупная галерея, услуги с ценами и быстрая запись на съёмку.",
-      "task": "Фотографу нужен сайт-портфолио, который не мешает снимкам и ведёт к записи на съёмку.",
-      "solution": "Крупная галерея, пакеты с ценами и форма заявки. Фото в WebP двух размеров и свои шрифты, поэтому страница открывается быстро. Все данные лежат в отдельных файлах, и заказчик может поменять их сам."
+      "kicker": "Веб-сервис с ИИ",
+      "title": "Студия карточек для маркетплейсов",
+      "lead": "Снимок товара на телефон превращается в карточку для Wildberries, Ozon и Яндекс Маркета, как от дизайнера, примерно за 20 секунд.",
+      "task": "Продавцу нужна сильная главная картинка, а дизайнер стоит дорого. Нейросети рисуют красиво, но меняют сам товар, выдумывают свойства и ломают кириллицу.",
+      "solution": "Три сценария: по фото, с готовым текстом и по понравившемуся референсу. Текст проверяется по правилам площадок до генерации, чтобы не платить за ошибку. Форма и цвет товара сохраняются, а вторая нейросеть сверяет готовую карточку с исходным фото и заданным текстом. Серия слайдов в едином стиле, таблица размеров и характеристики собираются без нейросети, поэтому цифры точны. Backend на FastAPI, упаковка в Docker.",
+      "result": "Готовая серия слайдов и ZIP для загрузки. Цыплёнок в примерах снят на обычный телефон."
     },
     "en": {
-      "kicker": "Business card site",
-      "title": "Photographer",
-      "lead": "A site where the photos come first: a large gallery, services with prices and quick booking.",
-      "task": "A photographer needs a portfolio site that lets the pictures speak and leads to a booking.",
-      "solution": "A large gallery, priced packages and a request form. Photos are WebP in two sizes and fonts are self-hosted, so the page loads fast. All data sits in separate files, so the client can edit it."
+      "kicker": "AI web service",
+      "title": "Product card studio for marketplaces",
+      "lead": "A phone snapshot of a product becomes a designer-grade card for Russian marketplaces in about 20 seconds.",
+      "task": "Sellers need a strong main image, but a designer is expensive. AI image tools look great, yet they alter the product, invent features and break Cyrillic text.",
+      "solution": "Three scenarios: from a photo, with ready copy, or from a style reference. Copy is checked against marketplace rules before generation, so nobody pays for a mistake. Product shape and colour are preserved, and a second model compares the finished card with the source photo and the requested text. Consistent slide series, while the size chart and specs are built without AI, so the numbers stay exact. FastAPI backend, packaged in Docker.",
+      "result": "A ready slide series and a ZIP to upload. The chick in the examples was shot on an ordinary phone."
     }
+  },
+  {
+    "id": "repair-quiz",
+    "url": "https://quiz.myfreelab.ru",
+    "image": "/images/repair-quiz.webp",
+    "color": "#e0612b",
+    "watermark": "Квиз",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Google Apps Script"
+    ],
+    "ru": {
+      "kicker": "Квиз-калькулятор",
+      "title": "Сколько стоит ремонт квартиры",
+      "lead": "Шесть коротких вопросов — и посетитель видит вилку цены и сроки, а компания получает заявку с ответами.",
+      "task": "Ремонтной компании нужны тёплые заявки с сайта: клиент заранее понимает бюджет, а прораб знает объём работ до звонка.",
+      "solution": "Вопросы по одному с прогрессом, расчёт вилки по площади, типу ремонта, санузлам и опциям, сроки в неделях. Форма с маской телефона, выбором мессенджера, согласием на обработку данных и защитой от ботов. Заявка вместе со всеми ответами сразу попадает в таблицу владельца.",
+      "result": "Тёплые заявки: клиент заранее видит бюджет, прораб — объём работ."
+    },
+    "en": {
+      "kicker": "Quiz calculator",
+      "title": "How much does a flat renovation cost",
+      "lead": "Six short questions — the visitor sees a price range and timing, and the company gets a lead with all the answers.",
+      "task": "A renovation company wants warm leads from its site: the client knows the budget up front and the foreman knows the scope before calling.",
+      "solution": "One question at a time with progress, a price range by area, renovation type, bathrooms and extras, timing in weeks. A form with a phone mask, messenger choice, data consent and bot protection. The lead with all answers lands in the owner's table immediately.",
+      "result": "Warm leads: the client sees the budget up front, the foreman sees the scope."
+    },
+    "group": "leads"
+  },
+  {
+    "id": "smeta-calculator",
+    "url": "https://calc.myfreelab.ru",
+    "image": "/images/smeta-calculator.webp",
+    "color": "#1f4e79",
+    "watermark": "Смета",
+    "stack": [
+      "Electron",
+      "JavaScript",
+      "Excel (SheetJS)"
+    ],
+    "ru": {
+      "kicker": "Программа для Windows и веб",
+      "title": "Смета-калькулятор каркасного дома",
+      "lead": "Менеджер выбирает площадь, фундамент, кровлю, инженерию и отделку — программа считает смету по прайсу компании и выдаёт КП в PDF.",
+      "task": "Строительной компании нужно быстро и одинаково считать стоимость дома для каждого клиента, без ручных таблиц и ошибок.",
+      "solution": "Прайс из 59 позиций лежит в Excel, и калькулятор строится из него: новый вариант в таблице сразу появляется в программе. Мастер из 5 шагов, итог по разделам, проверка цены за м², экспорт КП в PDF и сметы в Excel, обновление прайса с Яндекс Диска одной кнопкой. Версия для Windows с иконкой и веб-версия из одного кода, расчёт закрыт автотестами.",
+      "result": "Смета и КП за 2 минуты вместо часа в Excel, цены компания меняет сама."
+    },
+    "en": {
+      "kicker": "Windows app and web",
+      "title": "Frame house cost calculator",
+      "lead": "A manager picks the area, foundation, roof, utilities and finish — the app prices the house from the company's price list and exports a PDF quote.",
+      "task": "A construction company needs fast, consistent house estimates for every client without manual spreadsheets.",
+      "solution": "The 59-item price list lives in Excel and the whole calculator is built from it, so a new option in the sheet appears in the app at once. A 5-step wizard, totals by section, a price-per-m² sanity check, PDF quote and Excel estimate export, one-click price update from Yandex Disk. A Windows build with an icon and a web version share one codebase, and the maths is covered by automated tests.",
+      "result": "An estimate and quote in 2 minutes instead of an hour in Excel; the company updates prices itself."
+    },
+    "group": "sales"
+  },
+  {
+    "id": "kp-generator",
+    "url": "https://kp.myfreelab.ru",
+    "image": "/images/kp-generator.webp",
+    "color": "#5b3cc4",
+    "watermark": "КП",
+    "stack": [
+      "JavaScript",
+      "Excel (SheetJS)",
+      "PDF"
+    ],
+    "ru": {
+      "kicker": "Веб-сервис",
+      "title": "КП-генератор по любому прайсу",
+      "lead": "Загрузите прайс в Excel, отметьте позиции — и через минуту у клиента аккуратное коммерческое предложение в PDF.",
+      "task": "Менеджерам клининга, ремонта и рекламы нужно быстро собирать коммерческие предложения по своему прайсу, а не копировать строки вручную.",
+      "solution": "Сервис сам находит в прайсе колонки названия, цены и единиц, понимает разделы и цены текстом. Поиск и категории, скидка, НДС 22% в цене или сверху, логотип и реквизиты компании, нумерация КП и архив «Мои КП». PDF и Excel формируются прямо в браузере, данные не уходят на сервер.",
+      "result": "КП из любого прайса за минуту — с логотипом, скидкой и НДС."
+    },
+    "en": {
+      "kicker": "Web service",
+      "title": "Quote generator for any price list",
+      "lead": "Upload an Excel price list, tick the items — and a neat PDF quote is ready for the client in a minute.",
+      "task": "Managers in cleaning, repair and advertising need to put together quotes from their own price list instead of copying rows by hand.",
+      "solution": "The service finds the name, price and unit columns on its own and understands section rows and prices written as text. Search and categories, discount, 22% VAT included or on top, company logo and details, quote numbering and a saved quotes archive. PDF and Excel are generated in the browser, no data leaves it.",
+      "result": "A quote from any price list in a minute — with logo, discount and VAT."
+    },
+    "group": "sales"
   },
   {
     "id": "robotics-school",
@@ -41,15 +128,18 @@
       "title": "Школа робототехники для детей",
       "lead": "Лендинг, который говорит с родителями: программы по возрастам, расписание и запись на пробное занятие.",
       "task": "Школе робототехники для детей 6–10 лет нужна одна страница, которая убедит родителей записаться на пробное занятие.",
-      "solution": "Два экрана: сначала польза для ребёнка, затем процесс обучения и цена. Запись идёт через окно с Яндекс Формой, своего сервера не нужно. Сайт работает без сборки: открыл файл, и всё готово."
+      "solution": "Два экрана: сначала польза для ребёнка, затем процесс обучения и цена. Запись идёт через окно с Яндекс Формой, своего сервера не нужно. Сайт работает без сборки: открыл файл, и всё готово.",
+      "result": "Родитель на одной странице проходит путь от «что это?» до записи на пробное занятие."
     },
     "en": {
       "kicker": "Landing page",
       "title": "Robotics school for kids",
       "lead": "A landing page that speaks to parents: programmes by age, schedule and a trial lesson sign-up.",
       "task": "A robotics school for kids aged 6–10 needs one page that convinces parents to book a trial lesson.",
-      "solution": "Two screens: first the benefits for the child, then the learning process and price. Booking goes through a Yandex Form modal, so no server is needed. The site needs no build step: open the file and it works."
-    }
+      "solution": "Two screens: first the benefits for the child, then the learning process and price. Booking goes through a Yandex Form modal, so no server is needed. The site needs no build step: open the file and it works.",
+      "result": "On one page a parent goes from \"what is this?\" to booking a trial class."
+    },
+    "group": "leads"
   },
   {
     "id": "beauty-salon",
@@ -70,37 +160,18 @@
       "title": "Салон красоты",
       "lead": "Сайт, который продаёт атмосферу: мастера, прайс по услугам, отзывы и онлайн-запись в пару касаний.",
       "task": "Салону нужно цифровое меню: напитки, услуги и товары в одном месте, а гость может собрать запрос администратору.",
-      "solution": "Каталог с фильтрами, корзина-черновик, чаевые и комментарии. В полной версии заявки уходят администратору в Telegram и в панель на Node.js и SQLite. Здесь показана статичная витрина."
+      "solution": "Каталог с фильтрами, корзина-черновик, чаевые и комментарии. В полной версии заявки уходят администратору в Telegram и в панель на Node.js и SQLite. Здесь показана статичная витрина.",
+      "result": "Гость заранее собирает визит, а администратор получает готовый запрос."
     },
     "en": {
       "kicker": "Services website",
       "title": "Beauty salon",
       "lead": "A site that sells the atmosphere: stylists, price list, reviews and online booking in a couple of taps.",
       "task": "A salon needs a digital menu: drinks, services and products in one place, and guests can compose a request for the administrator.",
-      "solution": "A catalogue with filters, a draft cart, tips and comments. The full version sends requests to the administrator in Telegram and to a Node.js and SQLite panel. This is the static showcase."
-    }
-  },
-  {
-    "id": "trading-club",
-    "url": "https://club.myfreelab.ru",
-    "image": "/images/trading-club.webp",
-    "color": "#1a1030",
-    "watermark": "Club",
-    "stack": ["HTML", "CSS", "JavaScript"],
-    "ru": {
-      "kicker": "Презентационный сайт",
-      "title": "Международный трейдинг-клуб",
-      "lead": "Премиальная страница в чёрном и золотом: клуб, программы, цифры и вступление без обещаний прибыли.",
-      "task": "Заказчику нужен презентационный сайт клуба в стиле «старые деньги»: десять блоков, доверие и вступление в клуб.",
-      "solution": "Десять блоков по ТЗ, правила риска вместо громких обещаний, три программы и форма заявки в Google Таблицу. Шрифты свои, всё работает без сборки."
+      "solution": "A catalogue with filters, a draft cart, tips and comments. The full version sends requests to the administrator in Telegram and to a Node.js and SQLite panel. This is the static showcase.",
+      "result": "A guest plans the visit ahead, and the front desk gets a ready request."
     },
-    "en": {
-      "kicker": "Presentation site",
-      "title": "International trading club",
-      "lead": "A premium black and gold page: the club, programmes, figures and joining, with no profit promises.",
-      "task": "The client needs a presentation site for a club in an old-money style: ten blocks, trust and joining the club.",
-      "solution": "Ten blocks as in the brief, risk rules instead of loud promises, three programmes and a lead form that writes to Google Sheets. Self-hosted fonts, no build step."
-    }
+    "group": "sales"
   },
   {
     "id": "psychology-support",
@@ -109,20 +180,85 @@
     "color": "#dfe9e2",
     "watermark": "Опора",
     "light": true,
-    "stack": ["HTML", "CSS", "JavaScript"],
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
     "ru": {
       "kicker": "Сайт курса",
       "title": "Психологическая поддержка",
       "lead": "Тёплая светлая страница курса на четыре недели: практики, группа и запись на бесплатную встречу.",
       "task": "Заказчику нужен сайт психологической помощи на восемь блоков с реальными методами поддержки и курсом.",
-      "solution": "Восемь блоков, понятные практики вместо общих слов, программа по неделям и бережные оговорки. Курс не заменяет медицинскую помощь, это сказано на странице."
+      "solution": "Восемь блоков, понятные практики вместо общих слов, программа по неделям и бережные оговорки. Курс не заменяет медицинскую помощь, это сказано на странице.",
+      "result": "Бережный путь к записи на курс: программа, формат и ответы на сомнения."
     },
     "en": {
       "kicker": "Course website",
       "title": "Psychological support",
       "lead": "A warm, light page for a four-week course: practices, a group and a free intro meeting.",
       "task": "The client needs a psychological support site of eight blocks with real support methods and a course.",
-      "solution": "Eight blocks, concrete practices instead of vague words, a week-by-week programme and careful disclaimers. The course does not replace medical care, and the page says so."
-    }
+      "solution": "Eight blocks, concrete practices instead of vague words, a week-by-week programme and careful disclaimers. The course does not replace medical care, and the page says so.",
+      "result": "A gentle path to signing up: programme, format and answers to doubts."
+    },
+    "group": "leads"
+  },
+  {
+    "id": "photographer",
+    "url": "https://photo.myfreelab.ru",
+    "image": "/images/photographer.webp",
+    "color": "#1D1B19",
+    "watermark": "Фото",
+    "stack": [
+      "React",
+      "Vite",
+      "CSS"
+    ],
+    "ru": {
+      "kicker": "Сайт-визитка",
+      "title": "Фотограф",
+      "lead": "Сайт, где главное — снимки: крупная галерея, услуги с ценами и быстрая запись на съёмку.",
+      "task": "Фотографу нужен сайт-портфолио, который не мешает снимкам и ведёт к записи на съёмку.",
+      "solution": "Крупная галерея, пакеты с ценами и форма заявки. Фото в WebP двух размеров и свои шрифты, поэтому страница открывается быстро. Все данные лежат в отдельных файлах, и заказчик может поменять их сам.",
+      "result": "Посетитель за минуту видит стиль и цены и сразу записывается на съёмку."
+    },
+    "en": {
+      "kicker": "Business card site",
+      "title": "Photographer",
+      "lead": "A site where the photos come first: a large gallery, services with prices and quick booking.",
+      "task": "A photographer needs a portfolio site that lets the pictures speak and leads to a booking.",
+      "solution": "A large gallery, priced packages and a request form. Photos are WebP in two sizes and fonts are self-hosted, so the page loads fast. All data sits in separate files, so the client can edit it.",
+      "result": "In a minute a visitor sees the style and prices and books a shoot."
+    },
+    "group": "showcase"
+  },
+  {
+    "id": "trading-club",
+    "url": "https://club.myfreelab.ru",
+    "image": "/images/trading-club.webp",
+    "color": "#1a1030",
+    "watermark": "Club",
+    "stack": [
+      "HTML",
+      "CSS",
+      "JavaScript"
+    ],
+    "ru": {
+      "kicker": "Презентационный сайт",
+      "title": "Международный трейдинг-клуб",
+      "lead": "Премиальная страница в чёрном и золотом: клуб, программы, цифры и вступление без обещаний прибыли.",
+      "task": "Заказчику нужен презентационный сайт клуба в стиле «старые деньги»: десять блоков, доверие и вступление в клуб.",
+      "solution": "Десять блоков по ТЗ, правила риска вместо громких обещаний, три программы и форма заявки в Google Таблицу. Шрифты свои, всё работает без сборки.",
+      "result": "Сильное первое впечатление и заявка на вступление без лишних шагов."
+    },
+    "en": {
+      "kicker": "Presentation site",
+      "title": "International trading club",
+      "lead": "A premium black and gold page: the club, programmes, figures and joining, with no profit promises.",
+      "task": "The client needs a presentation site for a club in an old-money style: ten blocks, trust and joining the club.",
+      "solution": "Ten blocks as in the brief, risk rules instead of loud promises, three programmes and a lead form that writes to Google Sheets. Self-hosted fonts, no build step.",
+      "result": "A strong first impression and a membership request without extra steps."
+    },
+    "group": "showcase"
   }
 ]

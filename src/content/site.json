@@ -3,102 +3,130 @@
     "telegram": "AlexAn_369",
     "email": "alex2180369@gmail.com"
   },
+  "leadApi": "https://leads.myfreelab.ru/api/lead.php",
   "ru": {
-    "issue": "Выпуск №01 · Осень 2026 · myfreelab.ru",
+    "issue": "Лаборатория myfreelab · выпуск №02 · осень 2026",
     "langLabel": "Язык сайта",
     "name": "Алексей Ан",
+    "brandSub": "лаборатория myfreelab",
+    "menu": "Меню",
+    "close": "Закрыть",
     "nav": {
-      "services": "Услуги",
       "work": "Работы",
+      "services": "Пакеты и цены",
       "process": "Как работаю",
-      "about": "Обо мне",
+      "faq": "Вопросы",
       "contact": "Контакты"
     },
     "cta": "Обсудить проект",
     "hero": {
-      "kicker": "Главная тема номера",
-      "titleStart": "Сайты, тексты и боты, которые",
-      "titleAccent": "продают",
-      "lead": "Помогаю малому бизнесу выглядеть в интернете дорого: делаю лендинги, карточки для маркетплейсов, продающие тексты и чат-боты.",
-      "primary": "Смотреть работы",
-      "secondary": "Написать в Telegram",
-      "coverLine": "В номере: пять кейсов, четыре услуги и честный рассказ о том, как мы будем работать."
+      "kicker": "Лаборатория Алексея Ан",
+      "titleStart": "Сайты и инструменты, которые",
+      "titleAccent": "приводят клиентов",
+      "titleEnd": "и экономят время",
+      "lead": "Делаю для малого бизнеса лендинги, квизы, калькуляторы и чат-ботов. Все работы ниже живые — их можно открыть и попробовать, как это сделает ваш клиент.",
+      "tasksTitle": "С чего начнём?",
+      "facts": ["{n} живых проектов", "ответ в течение дня", "данные заявок хранятся в России"]
     },
-    "services": {
-      "title": "Содержание",
-      "meta": "Услуги и цены",
-      "from": "от",
-      "currency": "₽",
-      "items": [
-        {
-          "title": "Тексты",
-          "text": "Продающие тексты для сайтов, соцсетей и рассылок. Пишу так, чтобы клиент понял выгоду за пять секунд. Цена за страницу.",
-          "price": "1 500"
-        },
-        {
-          "title": "Карточки для маркетплейсов",
-          "text": "Инфографика и описания для Wildberries и Ozon: выделяем товар в выдаче и отвечаем на вопросы покупателя до того, как он их задаст. Цена за одну карточку.",
-          "price": "400"
-        },
-        {
-          "title": "Лендинги",
-          "text": "Одностраничные сайты под ключ: структура, тексты, дизайн, вёрстка, домен и HTTPS. Цена за сайт целиком.",
-          "price": "24 000"
-        },
-        {
-          "title": "Чат-боты",
-          "text": "Telegram-боты для записи, приёма заявок и ответов на частые вопросы. Работают круглосуточно. Простой бот под ключ.",
-          "price": "2 500"
-        }
-      ]
+    "groups": {
+      "all": "Все работы",
+      "leads": { "title": "Привлечь клиентов", "text": "Лендинг, квиз или бот, которые превращают посетителей в заявки" },
+      "sales": { "title": "Посчитать и продать", "text": "Калькулятор, смета и КП по вашему прайсу за пару минут" },
+      "showcase": { "title": "Показать себя", "text": "Сайт-визитка, который выглядит дорого и ведёт к записи" }
     },
     "work": {
-      "title": "Избранные работы",
-      "meta": "Кейсы",
-      "case": "Кейс",
+      "title": "Работы",
+      "meta": "Живые проекты · можно потрогать",
+      "result": "Что получает заказчик",
       "task": "Задача",
-      "solution": "Решение",
-      "stack": "Стек",
-      "open": "Открыть сайт",
+      "solution": "Как сделано",
+      "more": "Подробнее",
+      "less": "Свернуть",
+      "open": "Открыть вживую",
       "soon": "Скоро онлайн",
-      "screenshot": "Скриншот сайта"
+      "screenshot": "Скриншот сайта",
+      "empty": "В этой группе пока нет работ"
     },
-    "quote": {
-      "text": "«Хороший сайт не уговаривает доверять. Он сразу показывает, почему можно»",
-      "author": "Алексей Ан"
+    "services": {
+      "title": "Пакеты и цены",
+      "meta": "Под ключ · с запуском",
+      "from": "от",
+      "currency": "₽",
+      "term": "Срок",
+      "order": "Обсудить",
+      "items": [
+        {
+          "group": "leads",
+          "title": "Лендинг под ключ",
+          "price": "24 000",
+          "term": "7–10 дней",
+          "text": "Одна страница, которая ведёт к заявке.",
+          "includes": ["структура и продающие тексты", "дизайн и вёрстка под телефон", "форма заявки с уведомлением", "домен, HTTPS и аналитика"]
+        },
+        {
+          "group": "leads",
+          "title": "Квиз или калькулятор на сайт",
+          "price": "12 000",
+          "term": "5–7 дней",
+          "text": "Посетитель отвечает на вопросы, видит цену и оставляет тёплую заявку.",
+          "includes": ["вопросы и логика расчёта", "вилка цены и сроков", "заявка с ответами вам в Telegram и базу", "встраивание в ваш сайт"]
+        },
+        {
+          "group": "sales",
+          "title": "Калькулятор и КП по вашему прайсу",
+          "price": "12 000",
+          "term": "5–7 дней",
+          "text": "Менеджер считает смету за 2 минуты и отправляет клиенту готовое КП.",
+          "includes": ["перенос прайса в Excel-таблицу", "расчёт с коэффициентами", "КП в PDF и смета в Excel", "обновление цен без программиста"]
+        },
+        {
+          "group": "leads",
+          "title": "Чат-бот с ИИ для записи",
+          "price": "14 000",
+          "term": "5–7 дней",
+          "text": "Отвечает клиентам по вашей базе знаний и записывает их на услугу.",
+          "includes": ["база знаний и тон общения", "Telegram и ВКонтакте", "запись с проверкой времени", "уведомление вам о каждой записи"]
+        }
+      ],
+      "extraTitle": "Ещё могу",
+      "extra": [
+        { "title": "Продающие тексты", "price": "от 1 500 ₽ за страницу" },
+        { "title": "Карточки для Wildberries и Ozon", "price": "от 400 ₽ за карточку" },
+        { "title": "Поддержка и правки после запуска", "price": "от 2 000 ₽ в месяц" }
+      ],
+      "note": "Цены ниже рыночных: я учусь и собираю портфолио. Точную стоимость назову после короткого разговора о задаче."
     },
     "process": {
       "title": "Как я работаю",
       "meta": "Четыре шага",
       "steps": [
-        {
-          "title": "Знакомство",
-          "text": "Созваниваемся или переписываемся: обсуждаем задачу, примеры, сроки и бюджет."
-        },
-        {
-          "title": "Структура и тексты",
-          "text": "Собираю прототип и пишу тексты. Согласуем смысл до того, как рисовать."
-        },
-        {
-          "title": "Дизайн и разработка",
-          "text": "Делаю дизайн и вёрстку, показываю промежуточный результат, вношу правки."
-        },
-        {
-          "title": "Запуск",
-          "text": "Подключаю домен, HTTPS и аналитику. Передаю доступы и объясняю, как всё устроено."
-        }
+        { "title": "Знакомство", "text": "Переписываемся или созваниваемся: задача, примеры, сроки и бюджет. Это бесплатно." },
+        { "title": "Структура и тексты", "text": "Собираю прототип и пишу тексты. Согласуем смысл до того, как рисовать." },
+        { "title": "Дизайн и разработка", "text": "Показываю промежуточный результат по ссылке, вношу правки." },
+        { "title": "Запуск", "text": "Подключаю домен, HTTPS и уведомления о заявках. Передаю доступы и объясняю, как всё устроено." }
       ]
     },
     "about": {
-      "kicker": "Интервью номера",
+      "kicker": "Кто делает",
       "title": "Привет, я Алексей",
-      "photo": "Ваше фото",
       "paragraphs": [
-        "Я собираю сайты, пишу к ним тексты и настраиваю Telegram-ботов для малого бизнеса. Всё, что вы видите выше, сделано мной от первой идеи до рабочего адреса в интернете.",
-        "Я ещё учусь, и это честно отражено в ценах: они ниже рыночных. Взамен вы получаете внимание, а не очередь. Отвечаю быстро, объясняю простыми словами и не прячусь за терминами.",
-        "Люблю, когда у проекта есть характер. Фотографу нужна тишина вокруг снимков, детской школе нужна энергия, салону нужно спокойствие. Скучные шаблоны оставляю тем, кто любит скучные шаблоны. А кофе у меня всегда под рукой, на случай сложных правок."
+        "Собираю сайты и инструменты для малого бизнеса: от текста и дизайна до рабочего адреса в интернете. Всё, что выше, сделано мной.",
+        "Я ещё учусь, и это честно отражено в ценах. Взамен — внимание, а не очередь: отвечаю быстро, объясняю простыми словами.",
+        "Люблю, когда у проекта есть характер: фотографу нужна тишина вокруг снимков, детской школе — энергия, строителям — точные цифры."
       ],
       "image": "/images/me.webp"
+    },
+    "faq": {
+      "title": "Частые вопросы",
+      "meta": "Коротко и честно",
+      "items": [
+        { "q": "Сколько стоит и от чего зависит цена?", "a": "Ориентиры — в пакетах выше. Итог зависит от числа страниц и интеграций. Точную сумму и срок назову после короткого разговора, до начала работы." },
+        { "q": "Как проходит оплата?", "a": "Договоримся до старта. Обычно работа делится на этапы, и вы платите за каждый после того, как увидели результат." },
+        { "q": "Сколько правок входит?", "a": "Правки на этапах структуры и дизайна входят в цену. Новые разделы и функции, которых не было в задаче, обсуждаем отдельно." },
+        { "q": "Что нужно от меня?", "a": "Рассказать о бизнесе и клиентах, прислать прайс, фото и примеры, которые нравятся. Если чего-то нет — подскажу, где взять." },
+        { "q": "Где хранятся заявки клиентов?", "a": "В базе данных на российском хостинге. Вам приходит уведомление, а личные данные клиентов не уходят за границу." },
+        { "q": "Что будет после запуска?", "a": "Передам доступы и короткую инструкцию. Мелкие правки в первую неделю — бесплатно, дальше можно взять поддержку." }
+      ]
     },
     "contact": {
       "titleStart": "Расскажите",
@@ -107,134 +135,169 @@
       "name": "Имя",
       "namePh": "Как к вам обращаться",
       "contact": "Telegram или телефон",
-      "contactPh": "@username",
+      "contactPh": "@username или +7…",
       "message": "Что нужно сделать",
-      "messagePh": "Например: лендинг для студии маникюра",
+      "messagePh": "Например: квиз для студии ремонта",
+      "consentStart": "Согласен на обработку персональных данных по",
+      "consentLink": "политике конфиденциальности",
       "send": "Отправить заявку",
       "telegram": "Telegram",
       "email": "Почта",
       "sending": "Отправляю…",
       "ok": "Спасибо! Заявка отправлена, скоро отвечу.",
-      "fail": "Не получилось отправить. Напишите, пожалуйста, в Telegram.",
-      "mailHint": "Откроется почтовая программа с готовым письмом."
+      "fail": "Не получилось отправить. Напишите, пожалуйста, в Telegram или на почту — ссылки слева.",
+      "needConsent": "Отметьте согласие на обработку данных."
     },
-    "footer": "© 2026 Алексей Ан"
+    "footer": "© 2026 Алексей Ан · лаборатория myfreelab",
+    "privacy": "Политика конфиденциальности",
+    "toTop": "Наверх"
   },
   "en": {
-    "issue": "Issue No.01 · Autumn 2026 · myfreelab.ru",
+    "issue": "myfreelab lab · issue No.02 · autumn 2026",
     "langLabel": "Site language",
     "name": "Alexey An",
+    "brandSub": "myfreelab lab",
+    "menu": "Menu",
+    "close": "Close",
     "nav": {
-      "services": "Services",
       "work": "Work",
+      "services": "Packages",
       "process": "Process",
-      "about": "About",
+      "faq": "FAQ",
       "contact": "Contact"
     },
     "cta": "Discuss a project",
     "hero": {
-      "kicker": "Cover story",
-      "titleStart": "Websites, copy and bots that",
-      "titleAccent": "sell",
-      "lead": "I help small businesses look premium online: landing pages, marketplace product cards, sales copy and chatbots.",
-      "primary": "See the work",
-      "secondary": "Message on Telegram",
-      "coverLine": "In this issue: five case studies, four services and an honest look at how we'll work together."
+      "kicker": "Alexey An's lab",
+      "titleStart": "Websites and tools that",
+      "titleAccent": "bring clients",
+      "titleEnd": "and save time",
+      "lead": "I build landing pages, quizzes, calculators and chatbots for small businesses. Every project below is live — open it and try it the way your customer would.",
+      "tasksTitle": "Where do we start?",
+      "facts": ["{n} live projects", "reply within a day", "lead data stored in Russia"]
     },
-    "services": {
-      "title": "Contents",
-      "meta": "Services & prices",
-      "from": "from",
-      "currency": "₽",
-      "items": [
-        {
-          "title": "Copywriting",
-          "text": "Sales copy for websites, social media and newsletters — so a customer sees the benefit in five seconds. Price per page.",
-          "price": "1 500"
-        },
-        {
-          "title": "Marketplace product cards",
-          "text": "Infographics and descriptions for Wildberries and Ozon that stand out in search and answer buyers' questions upfront. Price per card.",
-          "price": "400"
-        },
-        {
-          "title": "Landing pages",
-          "text": "Turnkey one-page sites: structure, copy, design, development, domain and HTTPS. Price for the whole site.",
-          "price": "24 000"
-        },
-        {
-          "title": "Chatbots",
-          "text": "Telegram bots for bookings, leads and FAQs. They work around the clock. A simple turnkey bot.",
-          "price": "2 500"
-        }
-      ]
+    "groups": {
+      "all": "All work",
+      "leads": { "title": "Get clients", "text": "A landing page, quiz or bot that turns visitors into leads" },
+      "sales": { "title": "Price and sell", "text": "A calculator, estimate and quote from your price list in minutes" },
+      "showcase": { "title": "Look great", "text": "A business card site that looks premium and leads to booking" }
     },
     "work": {
-      "title": "Selected work",
-      "meta": "Case studies",
-      "case": "Case",
+      "title": "Work",
+      "meta": "Live projects · try them",
+      "result": "What the client gets",
       "task": "Task",
-      "solution": "Solution",
-      "stack": "Stack",
-      "open": "Open site",
-      "soon": "Coming online soon",
-      "screenshot": "Site screenshot"
+      "solution": "How it's built",
+      "more": "Details",
+      "less": "Hide",
+      "open": "Open live",
+      "soon": "Coming soon",
+      "screenshot": "Site screenshot",
+      "empty": "No projects in this group yet"
     },
-    "quote": {
-      "text": "“A good website doesn't ask for trust. It shows you right away why you can.”",
-      "author": "Alexey An"
+    "services": {
+      "title": "Packages",
+      "meta": "Turnkey · launched for you",
+      "from": "from",
+      "currency": "₽",
+      "term": "Time",
+      "order": "Discuss",
+      "items": [
+        {
+          "group": "leads",
+          "title": "Turnkey landing page",
+          "price": "24 000",
+          "term": "7–10 days",
+          "text": "One page that leads to a request.",
+          "includes": ["structure and sales copy", "mobile-first design and build", "request form with notifications", "domain, HTTPS and analytics"]
+        },
+        {
+          "group": "leads",
+          "title": "Quiz or calculator for your site",
+          "price": "12 000",
+          "term": "5–7 days",
+          "text": "A visitor answers questions, sees a price and leaves a warm lead.",
+          "includes": ["questions and pricing logic", "price and time range", "lead with answers to your Telegram and database", "embedding into your site"]
+        },
+        {
+          "group": "sales",
+          "title": "Calculator and quotes from your price list",
+          "price": "12 000",
+          "term": "5–7 days",
+          "text": "A manager prices a job in 2 minutes and sends a ready quote.",
+          "includes": ["price list moved to an Excel sheet", "pricing with coefficients", "PDF quote and Excel estimate", "price updates without a developer"]
+        },
+        {
+          "group": "leads",
+          "title": "AI chatbot for bookings",
+          "price": "14 000",
+          "term": "5–7 days",
+          "text": "Answers customers from your knowledge base and books them in.",
+          "includes": ["knowledge base and tone", "Telegram and VK", "booking with time checks", "a notification for every booking"]
+        }
+      ],
+      "extraTitle": "Also",
+      "extra": [
+        { "title": "Sales copy", "price": "from 1 500 ₽ per page" },
+        { "title": "Wildberries and Ozon product cards", "price": "from 400 ₽ per card" },
+        { "title": "Support and edits after launch", "price": "from 2 000 ₽ per month" }
+      ],
+      "note": "Prices are below market: I'm still learning and building my portfolio. I'll name the exact price after a short talk about your task."
     },
     "process": {
-      "title": "How I work",
+      "title": "Process",
       "meta": "Four steps",
       "steps": [
-        {
-          "title": "Intro",
-          "text": "A call or a chat: we discuss the task, examples, timeline and budget."
-        },
-        {
-          "title": "Structure & copy",
-          "text": "I build a prototype and write the copy. We agree on meaning before design."
-        },
-        {
-          "title": "Design & build",
-          "text": "I design and develop the site, share progress and make revisions."
-        },
-        {
-          "title": "Launch",
-          "text": "I set up the domain, HTTPS and analytics, hand over access and explain how it all works."
-        }
+        { "title": "Intro", "text": "We chat or call: task, examples, timing and budget. Free of charge." },
+        { "title": "Structure and copy", "text": "I build a prototype and write the copy. We agree on meaning before design." },
+        { "title": "Design and build", "text": "I share progress via a link and make edits." },
+        { "title": "Launch", "text": "I connect the domain, HTTPS and lead notifications, hand over access and explain how it all works." }
       ]
     },
     "about": {
-      "kicker": "The interview",
+      "kicker": "Who builds it",
       "title": "Hi, I'm Alexey",
-      "photo": "Your photo",
       "paragraphs": [
-        "I build websites, write the copy for them and set up Telegram bots for small businesses. Everything you see above is my work, from the first idea to a live address on the internet.",
-        "I'm still learning, and my prices honestly reflect that: they are below the market. In return you get attention instead of a queue. I reply fast, explain things in plain words and don't hide behind jargon.",
-        "I like projects that have character. A photographer needs quiet around the pictures, a kids' school needs energy, a salon needs calm. I leave boring templates to people who like boring templates. And there's always coffee within reach, just in case of tricky revisions."
+        "I build websites and tools for small businesses, from copy and design to a working address online. Everything above is my work.",
+        "I'm still learning, and my prices honestly reflect that. In return you get attention, not a queue: quick replies and plain words.",
+        "I like projects with character: a photographer needs calm around the photos, a kids' school needs energy, builders need exact numbers."
       ],
       "image": "/images/me.webp"
+    },
+    "faq": {
+      "title": "FAQ",
+      "meta": "Short and honest",
+      "items": [
+        { "q": "How much does it cost?", "a": "See the packages above for guidance. The total depends on pages and integrations. I'll name the exact price and timing after a short talk, before any work starts." },
+        { "q": "How does payment work?", "a": "We agree before we start. Usually the work is split into stages and you pay for each after seeing the result." },
+        { "q": "How many edits are included?", "a": "Edits at the structure and design stages are included. New sections or features beyond the task are discussed separately." },
+        { "q": "What do you need from me?", "a": "Tell me about your business and clients, send the price list, photos and examples you like. If something is missing, I'll help find it." },
+        { "q": "Where are customer leads stored?", "a": "In a database on Russian hosting. You get a notification, and customers' personal data never leaves the country." },
+        { "q": "What happens after launch?", "a": "I hand over access and a short guide. Small edits in the first week are free, then you can take a support plan." }
+      ]
     },
     "contact": {
       "titleStart": "Tell me",
       "titleAccent": "about your task",
-      "lead": "I reply within a day. If the task isn't fully defined yet, that's fine — we'll figure it out together.",
+      "lead": "I reply within a day. If the task isn't clear yet, that's fine — we'll figure it out together.",
       "name": "Name",
       "namePh": "How should I address you",
       "contact": "Telegram or phone",
-      "contactPh": "@username",
+      "contactPh": "@username or +7…",
       "message": "What needs to be done",
-      "messagePh": "E.g. a landing page for a nail studio",
+      "messagePh": "For example: a quiz for a renovation studio",
+      "consentStart": "I agree to the processing of personal data under the",
+      "consentLink": "privacy policy",
       "send": "Send request",
       "telegram": "Telegram",
       "email": "Email",
       "sending": "Sending…",
-      "ok": "Thanks! Your request is sent, I'll reply soon.",
-      "fail": "Couldn't send it. Please message me on Telegram.",
-      "mailHint": "Your email app will open with the message ready."
+      "ok": "Thank you! Your request is sent, I'll reply soon.",
+      "fail": "Couldn't send it. Please message me on Telegram or by email — links on the left.",
+      "needConsent": "Please tick the data processing consent."
     },
-    "footer": "© 2026 Alexey An"
+    "footer": "© 2026 Alexey An · myfreelab lab",
+    "privacy": "Privacy policy",
+    "toTop": "Back to top"
   }
 }

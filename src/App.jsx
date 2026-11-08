@@ -3,7 +3,9 @@ import site from './content/site.json';
 import projects from './content/projects.json';
 
 const LANGS = ['ru', 'en'];
+const GROUPS = ['leads', 'sales', 'showcase'];
 const pad = (n) => String(n).padStart(2, '0');
+const tg = `https://t.me/${site.contacts.telegram}`;
 
 function initialLang() {
   try {
@@ -17,14 +19,16 @@ function initialLang() {
 
 export default function App() {
   const [lang, setLang] = useState(initialLang);
+  const [filter, setFilter] = useState('all');
+  const [preset, setPreset] = useState('');
   const t = site[lang];
 
   useEffect(() => {
     document.documentElement.lang = lang;
     document.title =
       lang === 'ru'
-        ? 'Алексей Ан — сайты, тексты и боты для малого бизнеса'
-        : 'Alexey An — websites, copy and bots for small business';
+        ? 'Алексей Ан — сайты, квизы, калькуляторы и боты для малого бизнеса'
+        : 'Alexey An — websites, quizzes, calculators and bots for small business';
     try {
       localStorage.setItem('lang', lang);
     } catch {
@@ -32,19 +36,30 @@ export default function App() {
     }
   }, [lang]);
 
+  // Кнопки «С чего начнём?» и «Обсудить» в пакетах: выбрать группу работ / подставить текст заявки
+  const showGroup = (g) => {
+    setFilter(g);
+    document.getElementById('work')?.scrollIntoView();
+  };
+  const discuss = (text) => {
+    setPreset(text);
+    document.getElementById('contact')?.scrollIntoView();
+  };
+
   return (
     <>
       <TopBar t={t} lang={lang} setLang={setLang} />
       <Header t={t} />
       <main>
-        <Hero t={t} />
-        <Services t={t} />
-        <Work t={t} lang={lang} />
-        <Quote t={t} />
+        <Hero t={t} showGroup={showGroup} />
+        <Work t={t} lang={lang} filter={filter} setFilter={setFilter} />
+        <Services t={t} discuss={discuss} />
         <Process t={t} />
         <About t={t} />
-        <Contact t={t} lang={lang} />
+        <Faq t={t} />
+        <Contact t={t} lang={lang} preset={preset} />
       </main>
+      <a href="#contact" className="sticky-cta btn btn--accent">{t.cta}</a>
     </>
   );
 }
@@ -53,7 +68,7 @@ function TopBar({ t, lang, setLang }) {
   return (
     <div className="topbar">
       <div className="wrap topbar__in">
-        <span>{t.issue}</span>
+        <span className="topbar__issue">{t.issue}</span>
         <div className="lang" role="group" aria-label={t.langLabel}>
           {LANGS.map((l) => (
             <button
@@ -73,44 +88,60 @@ function TopBar({ t, lang, setLang }) {
 }
 
 function Header({ t }) {
-  const items = ['services', 'work', 'process', 'about', 'contact'];
+  const [open, setOpen] = useState(false);
+  const items = ['work', 'services', 'process', 'faq', 'contact'];
   return (
     <header className="wrap header">
-      <a href="#top" className="logo">{t.name}</a>
-      <nav aria-label="Menu" className="nav">
+      <a href="#top" className="logo">
+        {t.name}
+        <span className="logo__sub">{t.brandSub}</span>
+      </a>
+      <button
+        type="button"
+        className="burger"
+        aria-expanded={open}
+        aria-controls="main-nav"
+        onClick={() => setOpen(!open)}
+      >
+        {open ? t.close : t.menu}
+      </button>
+      <nav id="main-nav" aria-label="Menu" className={`nav ${open ? 'is-open' : ''}`}>
         {items.map((id) => (
-          <a key={id} href={`#${id}`}>{t.nav[id]}</a>
+          <a key={id} href={`#${id}`} onClick={() => setOpen(false)}>{t.nav[id]}</a>
         ))}
       </nav>
-      <a href="#contact" className="btn btn--accent">{t.cta}</a>
+      <a href="#contact" className="btn btn--accent header__cta">{t.cta}</a>
     </header>
   );
 }
 
-function Hero({ t }) {
+function Hero({ t, showGroup }) {
   const h = t.hero;
   return (
     <section id="top" className="wrap hero">
       <div className="hero__mast">
-        <h1>{t.name}</h1>
+        <p className="kicker">{h.kicker}</p>
+        <h1 className="hero__title">
+          {h.titleStart} <em>{h.titleAccent}</em> {h.titleEnd}
+        </h1>
       </div>
       <div className="hero__body">
-        <div className="hero__main">
-          <p className="kicker">{h.kicker}</p>
-          <h2 className="hero__title">
-            {h.titleStart} <em>{h.titleAccent}</em>
-          </h2>
-        </div>
-        <div className="hero__side">
-          <p className="lead">{h.lead}</p>
-          <div className="btns">
-            <a href="#work" className="btn btn--dark">{h.primary}</a>
-            <a href={`https://t.me/${site.contacts.telegram}`} className="btn btn--line" target="_blank" rel="noopener">
-              {h.secondary}
-            </a>
-          </div>
-          <p className="coverline">{h.coverLine}</p>
-        </div>
+        <p className="lead hero__lead">{h.lead}</p>
+        <ul className="facts">
+          {h.facts.map((f) => (
+            <li key={f}>{f.replace('{n}', projects.length)}</li>
+          ))}
+        </ul>
+      </div>
+      <p className="tasks__title">{h.tasksTitle}</p>
+      <div className="tasks">
+        {GROUPS.map((g, i) => (
+          <button type="button" className="task" key={g} onClick={() => showGroup(g)}>
+            <span className="task__num">{pad(i + 1)}</span>
+            <span className="task__title">{t.groups[g].title} →</span>
+            <span className="task__text">{t.groups[g].text}</span>
+          </button>
+        ))}
       </div>
     </section>
   );
@@ -125,80 +156,113 @@ function SectionHead({ title, meta, dark }) {
   );
 }
 
-function Services({ t }) {
-  const s = t.services;
-  return (
-    <section id="services" className="dark">
-      <div className="wrap section">
-        <SectionHead title={s.title} meta={s.meta} dark />
-        <div className="toc">
-          {s.items.map((it, i) => (
-            <div className="toc__row" key={it.title}>
-              <span className="toc__num">{pad(i + 1)}</span>
-              <h3>{it.title}</h3>
-              <p>{it.text}</p>
-              <span className="toc__price">{s.from} {it.price} {s.currency}</span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function Work({ t, lang }) {
+function Work({ t, lang, filter, setFilter }) {
   const w = t.work;
+  const list = filter === 'all' ? projects : projects.filter((p) => p.group === filter);
   return (
     <section id="work" className="wrap section">
-      <SectionHead title={w.title} meta={`${w.meta} 01–${pad(projects.length)}`} />
-      {projects.map((p, i) => (
-        <Case key={p.id} p={p} i={i} w={w} c={p[lang]} />
-      ))}
+      <SectionHead title={w.title} meta={w.meta} />
+      <div className="chips" role="group" aria-label={w.title}>
+        {['all', ...GROUPS].map((g) => (
+          <button
+            key={g}
+            type="button"
+            className={`chip ${filter === g ? 'is-active' : ''}`}
+            aria-pressed={filter === g}
+            onClick={() => setFilter(g)}
+          >
+            {g === 'all' ? t.groups.all : t.groups[g].title}
+            <span className="chip__n">{g === 'all' ? projects.length : projects.filter((p) => p.group === g).length}</span>
+          </button>
+        ))}
+      </div>
+      <div className="cards">
+        {list.map((p) => (
+          <Card key={p.id} p={p} w={w} c={p[lang]} groupTitle={t.groups[p.group].title} />
+        ))}
+        {!list.length && <p className="muted">{w.empty}</p>}
+      </div>
     </section>
   );
 }
 
-function Case({ p, i, w, c }) {
+function Card({ p, w, c, groupTitle }) {
+  const [open, setOpen] = useState(false);
   return (
-    <article className={`case ${i % 2 ? 'case--rev' : ''}`}>
-      <div
-        className={`case__img ${p.light ? 'case__img--light' : ''}`}
+    <article className="card">
+      <a
+        className={`card__img ${p.light ? 'card__img--light' : ''}`}
         style={{ background: p.color }}
+        href={p.url || undefined}
+        target="_blank"
+        rel="noopener"
+        tabIndex={-1}
+        aria-hidden="true"
       >
         {p.image ? (
-          <img src={p.image} alt={c.title} loading="lazy" width="1440" height="900" />
+          <img src={p.image} alt="" loading="lazy" width="1440" height="900" />
         ) : (
-          <>
-            <span className="case__wm" aria-hidden="true">{p.watermark}</span>
-            <span className="case__label">[{w.screenshot}]</span>
-          </>
+          <span className="case__wm">{p.watermark}</span>
         )}
-      </div>
-      <div className="case__text">
-        <p className="kicker">{w.case} {pad(i + 1)} · {c.kicker}</p>
+      </a>
+      <div className="card__body">
+        <p className="kicker">{groupTitle} · {c.kicker}</p>
         <h3>{c.title}</h3>
         <p className="muted">{c.lead}</p>
-        <dl className="case__dl">
-          <div><dt>{w.task}</dt><dd>{c.task}</dd></div>
-          <div><dt>{w.solution}</dt><dd>{c.solution}</dd></div>
-          <div><dt>{w.stack}</dt><dd>{p.stack.join(', ')}</dd></div>
-        </dl>
-        {p.url ? (
-          <a href={p.url} className="case__link" target="_blank" rel="noopener">{w.open} →</a>
-        ) : (
-          <span className="case__soon">{w.soon}</span>
+        <p className="card__result"><b>{w.result}:</b> {c.result}</p>
+        {open && (
+          <dl className="card__dl">
+            <div><dt>{w.task}</dt><dd>{c.task}</dd></div>
+            <div><dt>{w.solution}</dt><dd>{c.solution}</dd></div>
+          </dl>
         )}
+        <div className="card__actions">
+          {p.url ? (
+            <a href={p.url} className="btn btn--dark" target="_blank" rel="noopener">{w.open} ↗</a>
+          ) : (
+            <span className="case__soon">{w.soon}</span>
+          )}
+          <button type="button" className="linkbtn" aria-expanded={open} onClick={() => setOpen(!open)}>
+            {open ? w.less : w.more}
+          </button>
+        </div>
       </div>
     </article>
   );
 }
 
-function Quote({ t }) {
+function Services({ t, discuss }) {
+  const s = t.services;
   return (
-    <section className="quote">
-      <div className="quote__in">
-        <p className="quote__text">{t.quote.text}</p>
-        <p className="kicker">{t.quote.author}</p>
+    <section id="services" className="dark">
+      <div className="wrap section">
+        <SectionHead title={s.title} meta={s.meta} dark />
+        <div className="packs">
+          {s.items.map((it) => (
+            <div className="pack" key={it.title}>
+              <p className="kicker">{t.groups[it.group].title}</p>
+              <h3>{it.title}</h3>
+              <p className="pack__price">{s.from} {it.price} {s.currency}</p>
+              <p className="pack__text">{it.text}</p>
+              <ul className="pack__list">
+                {it.includes.map((x) => <li key={x}>{x}</li>)}
+              </ul>
+              <p className="pack__term">{s.term}: {it.term}</p>
+              <button type="button" className="btn btn--accent" onClick={() => discuss(`${it.title}: `)}>
+                {s.order}
+              </button>
+            </div>
+          ))}
+        </div>
+        <div className="extra">
+          <p className="extra__title">{s.extraTitle}</p>
+          <ul>
+            {s.extra.map((x) => (
+              <li key={x.title}><span>{x.title}</span><span>{x.price}</span></li>
+            ))}
+          </ul>
+        </div>
+        <p className="pack__note">{s.note}</p>
       </div>
     </section>
   );
@@ -244,37 +308,52 @@ function About({ t }) {
   );
 }
 
-const LEAD_API = import.meta.env.VITE_LEAD_API;
+function Faq({ t }) {
+  const f = t.faq;
+  return (
+    <section id="faq" className="wrap section">
+      <SectionHead title={f.title} meta={f.meta} />
+      <div className="faq">
+        {f.items.map((x) => (
+          <details key={x.q}>
+            <summary>{x.q}</summary>
+            <p className="muted">{x.a}</p>
+          </details>
+        ))}
+      </div>
+    </section>
+  );
+}
 
-function Contact({ t, lang }) {
+function Contact({ t, lang, preset }) {
   const c = t.contact;
   const [status, setStatus] = useState('idle');
 
   async function onSubmit(e) {
     e.preventDefault();
-    const data = Object.fromEntries(new FormData(e.currentTarget));
-
-    if (!LEAD_API) {
-      // Пока нет бэкенда — открываем почту с готовым письмом
-      const body = `${c.name}: ${data.name}\n${c.contact}: ${data.contact}\n\n${data.message}`;
-      window.location.href = `mailto:${site.contacts.email}?subject=${encodeURIComponent('Заявка с myfreelab.ru')}&body=${encodeURIComponent(body)}`;
-      return;
-    }
-
+    const form = e.currentTarget;
+    const data = Object.fromEntries(new FormData(form));
+    if (!data.consent) { setStatus('consent'); return; }
     setStatus('sending');
     try {
-      const res = await fetch(LEAD_API, {
+      // text/plain — простой запрос без предварительной CORS-проверки
+      const res = await fetch(site.leadApi, {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ ...data, lang }),
+        headers: { 'Content-Type': 'text/plain;charset=utf-8' },
+        body: JSON.stringify({
+          site: 'myfreelab.ru', name: data.name, contact: data.contact, comment: data.message,
+          page: window.location.href, website: data.website, lang,
+        }),
       });
       if (!res.ok) throw new Error(res.status);
       setStatus('ok');
-      e.target.reset();
+      form.reset();
     } catch {
       setStatus('fail');
     }
   }
+
+  const note = { ok: c.ok, fail: c.fail, consent: c.needConsent }[status];
 
   return (
     <section id="contact" className="dark">
@@ -285,34 +364,36 @@ function Contact({ t, lang }) {
           </h2>
           <p className="lead">{c.lead}</p>
           <div className="contact__links">
-            <a href={`https://t.me/${site.contacts.telegram}`} target="_blank" rel="noopener">
-              {c.telegram} · @{site.contacts.telegram}
-            </a>
+            <a href={tg} target="_blank" rel="noopener">{c.telegram} · @{site.contacts.telegram}</a>
             <a href={`mailto:${site.contacts.email}`}>{c.email} · {site.contacts.email}</a>
           </div>
         </div>
 
         <form className="form" onSubmit={onSubmit}>
           <label htmlFor="f-name">{c.name}</label>
-          <input id="f-name" name="name" required autoComplete="name" placeholder={c.namePh} />
+          <input id="f-name" name="name" required maxLength={80} autoComplete="name" placeholder={c.namePh} />
           <label htmlFor="f-contact">{c.contact}</label>
-          <input id="f-contact" name="contact" required placeholder={c.contactPh} />
+          <input id="f-contact" name="contact" required maxLength={120} placeholder={c.contactPh} />
           <label htmlFor="f-msg">{c.message}</label>
-          <textarea id="f-msg" name="message" rows="4" required placeholder={c.messagePh} />
+          <textarea id="f-msg" name="message" rows="4" required maxLength={2000} placeholder={c.messagePh} key={preset} defaultValue={preset} />
+          <input className="hp" name="website" tabIndex={-1} autoComplete="off" aria-hidden="true" />
+          <label className="consent">
+            <input type="checkbox" name="consent" value="1" />
+            <span>{c.consentStart} <a href="privacy.html" target="_blank" rel="noopener">{c.consentLink}</a></span>
+          </label>
           <button type="submit" className="btn btn--accent" disabled={status === 'sending'}>
             {status === 'sending' ? c.sending : c.send}
           </button>
-          <p className="form__note" role="status">
-            {status === 'ok' && c.ok}
-            {status === 'fail' && c.fail}
-            {status === 'idle' && !LEAD_API && c.mailHint}
-          </p>
+          <p className={`form__note ${status === 'ok' ? 'is-ok' : ''}`} role="status">{note}</p>
         </form>
       </div>
       <footer className="footer">
         <div className="wrap footer__in">
           <span>{t.footer}</span>
-          <span>myfreelab.ru</span>
+          <span className="footer__links">
+            <a href="privacy.html">{t.privacy}</a>
+            <a href="#top">{t.toTop} ↑</a>
+          </span>
         </div>
       </footer>
     </section>
