@@ -24,7 +24,7 @@
       "titleStart": "Сайты и инструменты, которые",
       "titleAccent": "приводят клиентов",
       "titleEnd": "и экономят время",
-      "lead": "Делаю для малого бизнеса лендинги, квизы, калькуляторы и чат-ботов. Все работы ниже живые — их можно открыть и попробовать, как это сделает ваш клиент.",
+      "lead": "Делаю для малого бизнеса лендинги, квизы, калькуляторы, чат-ботов и трекеры для команды. Все работы ниже живые — их можно открыть и попробовать, как это сделает ваш клиент.",
       "tasksTitle": "С чего начнём?",
       "facts": ["{n} живых проектов", "ответ в течение дня", "данные заявок хранятся в России"]
     },
@@ -32,7 +32,8 @@
       "all": "Все работы",
       "leads": { "title": "Привлечь клиентов", "text": "Лендинг, квиз или бот, которые превращают посетителей в заявки" },
       "sales": { "title": "Посчитать и продать", "text": "Калькулятор, смета и КП по вашему прайсу за пару минут" },
-      "showcase": { "title": "Показать себя", "text": "Сайт-визитка, который выглядит дорого и ведёт к записи" }
+      "showcase": { "title": "Показать себя", "text": "Сайт-визитка, который выглядит дорого и ведёт к записи" },
+      "ops": { "title": "Наладить работу", "text": "Трекеры и кабинеты, где команда и клиенты видят задачи, отчёты и прогресс" }
     },
     "work": {
       "title": "Работы",
@@ -172,7 +173,7 @@
       "titleStart": "Websites and tools that",
       "titleAccent": "bring clients",
       "titleEnd": "and save time",
-      "lead": "I build landing pages, quizzes, calculators and chatbots for small businesses. Every project below is live — open it and try it the way your customer would.",
+      "lead": "I build landing pages, quizzes, calculators, chatbots and team trackers for small businesses. Every project below is live — open it and try it the way your customer would.",
       "tasksTitle": "Where do we start?",
       "facts": ["{n} live projects", "reply within a day", "lead data stored in Russia"]
     },
@@ -180,7 +181,8 @@
       "all": "All work",
       "leads": { "title": "Get clients", "text": "A landing page, quiz or bot that turns visitors into leads" },
       "sales": { "title": "Price and sell", "text": "A calculator, estimate and quote from your price list in minutes" },
-      "showcase": { "title": "Look great", "text": "A business card site that looks premium and leads to booking" }
+      "showcase": { "title": "Look great", "text": "A business card site that looks premium and leads to booking" },
+      "ops": { "title": "Run the work", "text": "Trackers and portals where your team and clients see tasks, reports and progress" }
     },
     "work": {
       "title": "Work",

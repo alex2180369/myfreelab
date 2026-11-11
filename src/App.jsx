@@ -3,7 +3,7 @@ import site from './content/site.json';
 import projects from './content/projects.json';
 
 const LANGS = ['ru', 'en'];
-const GROUPS = ['leads', 'sales', 'showcase'];
+const GROUPS = ['leads', 'sales', 'showcase', 'ops'];
 const pad = (n) => String(n).padStart(2, '0');
 const tg = `https://t.me/${site.contacts.telegram}`;
 
@@ -138,7 +138,7 @@ function Hero({ t, showGroup }) {
         {GROUPS.map((g, i) => (
           <button type="button" className="task" key={g} onClick={() => showGroup(g)}>
             <span className="task__num">{pad(i + 1)}</span>
-            <span className="task__title">{t.groups[g].title} →</span>
+            <span className="task__title">{t.groups[g].title}{' '}→</span>
             <span className="task__text">{t.groups[g].text}</span>
           </button>
         ))}

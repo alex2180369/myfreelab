@@ -25,6 +25,81 @@
     }
   },
   {
+    "id": "prorab",
+    "group": "ops",
+    "url": "https://prorab.myfreelab.ru",
+    "image": "/images/prorab.webp",
+    "color": "#e8e5de",
+    "watermark": "PRO",
+    "stack": ["Node.js", "SQLite", "Docker"],
+    "ru": {
+      "kicker": "Веб-приложение для стройки",
+      "title": "Прораб: контроль объектов с телефона",
+      "lead": "Директор видит все объекты на одной сводке, прораб сдаёт отчёт за день меньше чем за минуту, а дефект сразу превращается в задачу.",
+      "task": "Строительной компании нужно знать, что происходит на объектах, не обзванивая прорабов. В чатах и таблицах теряются фото, сроки и замечания.",
+      "solution": "Четыре роли с разными правами: директор, менеджер проектов, прораб, рабочий. Ежедневный отчёт с фото и типовыми проблемами в одно касание, сводка показывает объекты без отчёта, с проблемами и с просрочкой. Чек-листы качества по видам работ: из пункта «Исправить» одной кнопкой создаётся задача рабочему. Фото уменьшаются на телефоне перед отправкой, права проверяет сервер.",
+      "result": "Картина по всем объектам на одном экране и меньше звонков. Компания в демо выдуманная, войти можно в любой роли."
+    },
+    "en": {
+      "kicker": "Construction web app",
+      "title": "Foreman: site control from a phone",
+      "lead": "The director sees every site on one dashboard, the foreman files a daily report in under a minute, and a defect becomes a task right away.",
+      "task": "A construction company needs to know what happens on its sites without calling every foreman. Photos, deadlines and remarks get lost in chats and spreadsheets.",
+      "solution": "Four roles with their own permissions: director, project manager, foreman, worker. A daily report with photos and one-tap typical problems; the dashboard flags sites without a report, with problems or overdue tasks. Quality checklists per type of work: a failed item turns into a fix task with one button. Photos are resized on the phone before upload, permissions are checked on the server.",
+      "result": "The whole picture on one screen and fewer phone calls. The company in the demo is fictional, log in with any role."
+    }
+  },
+  {
+    "id": "zachet",
+    "group": "ops",
+    "url": "https://zachet.myfreelab.ru",
+    "image": "/images/zachet.webp",
+    "color": "#e8e5de",
+    "watermark": "5",
+    "stack": ["Node.js", "SQLite", "Docker", "Web Push"],
+    "ru": {
+      "kicker": "Кабинеты для репетитора",
+      "title": "Зачёт: домашка с автопроверкой и кабинет родителя",
+      "lead": "Репетитор собирает задание за пару минут, программа сразу проверяет ответы, а ученик и родитель видят оценки, расписание и слабые темы.",
+      "task": "Репетитору нужно выдавать и проверять домашние задания, вести расписание и показывать родителям прогресс, а не собирать фото тетрадей в мессенджере.",
+      "solution": "Конструктор заданий: один или несколько вариантов, короткий ответ, развёрнутое решение с фото. Короткий ответ сверяется без учёта регистра и запятой, правильные ответы не видны ученику до сдачи. Журнал «ученики × задания» и очередь на проверку, статистика по темам, расписание с еженедельными сериями и переносом одного занятия, материалы с доступом по ученикам. Сайт репетитора с заявкой на пробное занятие.",
+      "result": "Меньше ручной проверки и понятный прогресс для родителей. В демо выдуманный репетитор по математике: войти можно за репетитора, ученика или родителя."
+    },
+    "en": {
+      "kicker": "Tutor portal",
+      "title": "Zachet: homework with auto-check and a parent view",
+      "lead": "A tutor builds an assignment in a couple of minutes, answers are checked instantly, and both student and parent see grades, schedule and weak topics.",
+      "task": "A tutor needs to hand out and check homework, keep a schedule and show parents the progress instead of collecting notebook photos in a messenger.",
+      "solution": "An assignment builder: single or multiple choice, short answer, a worked solution with a photo. Short answers are compared ignoring case and decimal comma, correct answers stay hidden until the student submits. A students × assignments gradebook with a review queue, statistics by topic, a schedule with weekly series where one lesson can be moved alone, materials with per-student access. Plus the tutor's own site with a trial-lesson form.",
+      "result": "Less manual checking and clear progress for parents. The demo has a fictional maths tutor: log in as the tutor, a student or a parent."
+    }
+  },
+  {
+    "id": "pulse-tasks",
+    "group": "ops",
+    "url": "https://pulse.myfreelab.ru",
+    "image": "/images/pulse.webp",
+    "color": "#f4f3ee",
+    "watermark": "TG",
+    "stack": ["Node.js", "SQLite", "Telegram Bot API", "Docker"],
+    "ru": {
+      "kicker": "Трекер задач и Telegram-бот",
+      "title": "Пульс задач: доска команды и бот в Telegram",
+      "lead": "Задачи ставятся на сайте или прямо в Telegram, а руководитель видит, кто что делает и что горит.",
+      "task": "Небольшая команда ведёт задачи в переписке: сроки теряются, непонятно, кто за что отвечает и что уже сделано.",
+      "solution": "Роли администратора, руководителя и сотрудника, доска со статусами «Новая → В работе → На проверке → Готово», карточка задачи с комментариями и историей изменений. Telegram-бот показывает задачи, меняет статус кнопками, напоминает о сроках и присылает утреннюю сводку, а приложение открывается прямо внутри Telegram. Права проверяет сервер, бот работает через тот же API.",
+      "result": "Все задачи в одном месте, напоминания приходят сами. Команда в демо выдуманная, войти можно в любой роли."
+    },
+    "en": {
+      "kicker": "Task tracker and Telegram bot",
+      "title": "Pulse: a team board with a Telegram bot",
+      "lead": "Tasks are created on the site or right in Telegram, and the manager sees who is doing what and what is on fire.",
+      "task": "A small team runs tasks in chats: deadlines slip, and it is unclear who owns what and what is already done.",
+      "solution": "Admin, manager and employee roles, a board with New → In progress → Review → Done, a task card with comments and change history. The Telegram bot lists your tasks, changes status with buttons, reminds about deadlines and sends a morning digest, and the app opens right inside Telegram. Permissions are checked on the server, the bot uses the same API.",
+      "result": "All tasks in one place, reminders arrive by themselves. The team in the demo is fictional, log in with any role."
+    }
+  },
+  {
     "id": "repair-quiz",
     "url": "https://quiz.myfreelab.ru",
     "image": "/images/repair-quiz.webp",
