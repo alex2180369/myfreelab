@@ -314,23 +314,26 @@
     "stack": [
       "React",
       "Vite",
-      "CSS"
+      "CSS",
+      "PDF-лид-магнит"
     ],
     "ru": {
-      "kicker": "Сайт-визитка",
+      "kicker": "Сайт-визитка и лид-магнит",
       "title": "Фотограф",
       "lead": "Сайт, где главное — снимки: крупная галерея, услуги с ценами и быстрая запись на съёмку.",
       "task": "Фотографу нужен сайт-портфолио, который не мешает снимкам и ведёт к записи на съёмку.",
-      "solution": "Крупная галерея, пакеты с ценами и форма заявки. Фото в WebP двух размеров и свои шрифты, поэтому страница открывается быстро. Все данные лежат в отдельных файлах, и заказчик может поменять их сам.",
-      "result": "Посетитель за минуту видит стиль и цены и сразу записывается на съёмку."
+      "solution": "Крупная галерея, пакеты с ценами и форма заявки. Фото в WebP двух размеров и свои шрифты, поэтому страница открывается быстро. Все данные лежат в отдельных файлах, и заказчик может поменять их сам. В комплекте лид-магнит: PDF-чек-лист «Как подготовиться к фотосессии» в стиле сайта — его скачивают после раздела с ценами, а последняя страница ведёт к заявке.",
+      "result": "Посетитель за минуту видит стиль и цены и сразу записывается на съёмку, а чек-лист помогает к ней подготовиться.",
+      "extra": { "label": "Чек-лист PDF", "href": "https://photo.myfreelab.ru/files/kak-podgotovitsya-k-fotosessii.pdf" }
     },
     "en": {
-      "kicker": "Business card site",
+      "kicker": "Business card site and lead magnet",
       "title": "Photographer",
       "lead": "A site where the photos come first: a large gallery, services with prices and quick booking.",
       "task": "A photographer needs a portfolio site that lets the pictures speak and leads to a booking.",
-      "solution": "A large gallery, priced packages and a request form. Photos are WebP in two sizes and fonts are self-hosted, so the page loads fast. All data sits in separate files, so the client can edit it.",
-      "result": "In a minute a visitor sees the style and prices and books a shoot."
+      "solution": "A large gallery, priced packages and a request form. Photos are WebP in two sizes and fonts are self-hosted, so the page loads fast. All data sits in separate files, so the client can edit it. It comes with a lead magnet: a PDF checklist “How to prepare for a photo shoot” in the site's style — offered right after the prices, its last page leads to the booking form.",
+      "result": "In a minute a visitor sees the style and prices and books a shoot, and the checklist helps them arrive prepared.",
+      "extra": { "label": "PDF checklist", "href": "https://photo.myfreelab.ru/files/kak-podgotovitsya-k-fotosessii.pdf" }
     },
     "group": "showcase"
   },
