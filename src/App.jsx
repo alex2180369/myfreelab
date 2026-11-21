@@ -222,6 +222,9 @@ function Card({ p, w, c, groupTitle }) {
           ) : (
             <span className="case__soon">{w.soon}</span>
           )}
+          {c.extra && (
+            <a href={c.extra.href} className="btn btn--line" target="_blank" rel="noopener">{c.extra.label} ↓</a>
+          )}
           <button type="button" className="linkbtn" aria-expanded={open} onClick={() => setOpen(!open)}>
             {open ? w.less : w.more}
           </button>

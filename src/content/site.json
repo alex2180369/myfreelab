@@ -58,35 +58,51 @@
       "items": [
         {
           "group": "leads",
-          "title": "Лендинг под ключ",
-          "price": "24 000",
-          "term": "7–10 дней",
+          "title": "Лендинг-визитка",
+          "price": "12 000",
+          "term": "7 дней",
           "text": "Одна страница, которая ведёт к заявке.",
-          "includes": ["структура и продающие тексты", "дизайн и вёрстка под телефон", "форма заявки с уведомлением", "домен, HTTPS и аналитика"]
+          "includes": ["до 5 блоков: услуги, цены, работы, о вас, заявка", "дизайн и вёрстка под телефон", "форма заявки с уведомлением", "размещение и HTTPS"]
         },
         {
           "group": "leads",
-          "title": "Квиз или калькулятор на сайт",
-          "price": "12 000",
-          "term": "5–7 дней",
-          "text": "Посетитель отвечает на вопросы, видит цену и оставляет тёплую заявку.",
-          "includes": ["вопросы и логика расчёта", "вилка цены и сроков", "заявка с ответами вам в Telegram и базу", "встраивание в ваш сайт"]
+          "title": "Квиз для сбора заявок",
+          "price": "5 000",
+          "term": "4 дня",
+          "text": "Посетитель отвечает на вопросы, видит вилку цены и оставляет тёплую заявку.",
+          "includes": ["до 6 вопросов с полосой прогресса", "расчёт вилки цены и срока", "заявка вам в Telegram или таблицу", "страница, удобная на телефоне"]
+        },
+        {
+          "group": "leads",
+          "title": "Telegram-бот для заявок",
+          "price": "4 500",
+          "term": "3 дня",
+          "text": "Бот принимает заявки и сразу присылает их вам со всеми ответами.",
+          "includes": ["меню до 5 пунктов и форма заявки", "проверка телефона и обязательных полей", "уведомление вам или в рабочий чат", "запуск на вашем сервере"]
+        },
+        {
+          "group": "sales",
+          "title": "Калькулятор стоимости на сайт",
+          "price": "6 000",
+          "term": "5 дней",
+          "text": "Клиент сам выбирает параметры и сразу видит цену, а итог приходит вам с заявкой.",
+          "includes": ["до 8 параметров расчёта", "формулы и коэффициенты по вашему прайсу", "заявка с итогом в Telegram или таблицу", "цены меняете без программиста"]
         },
         {
           "group": "sales",
           "title": "Калькулятор и КП по вашему прайсу",
           "price": "12 000",
-          "term": "5–7 дней",
+          "term": "5 дней",
           "text": "Менеджер считает смету за 2 минуты и отправляет клиенту готовое КП.",
-          "includes": ["перенос прайса в Excel-таблицу", "расчёт с коэффициентами", "КП в PDF и смета в Excel", "обновление цен без программиста"]
+          "includes": ["прайс в Excel-таблице до 100 позиций", "расчёт с коэффициентами, скидкой и НДС", "КП в PDF и смета в Excel", "обновление цен без программиста"]
         },
         {
-          "group": "leads",
-          "title": "Чат-бот с ИИ для записи",
-          "price": "14 000",
-          "term": "5–7 дней",
-          "text": "Отвечает клиентам по вашей базе знаний и записывает их на услугу.",
-          "includes": ["база знаний и тон общения", "Telegram и ВКонтакте", "запись с проверкой времени", "уведомление вам о каждой записи"]
+          "group": "ops",
+          "title": "Веб-приложение под ключ",
+          "price": "30 000",
+          "term": "14 дней",
+          "text": "Трекер или кабинет, где команда и клиенты видят задачи, отчёты и прогресс.",
+          "includes": ["ТЗ: роли, разделы и сценарии", "вход и до 3 ролей с разными правами", "база данных, сервер и автотесты", "запуск на вашем сервере с HTTPS"]
         }
       ],
       "extraTitle": "Ещё могу",
@@ -207,35 +223,51 @@
       "items": [
         {
           "group": "leads",
-          "title": "Turnkey landing page",
-          "price": "24 000",
-          "term": "7–10 days",
+          "title": "Business card landing page",
+          "price": "12 000",
+          "term": "7 days",
           "text": "One page that leads to a request.",
-          "includes": ["structure and sales copy", "mobile-first design and build", "request form with notifications", "domain, HTTPS and analytics"]
+          "includes": ["up to 5 blocks: services, prices, work, about, request", "design and mobile-first layout", "request form with a notification", "hosting and HTTPS"]
         },
         {
           "group": "leads",
-          "title": "Quiz or calculator for your site",
-          "price": "12 000",
-          "term": "5–7 days",
-          "text": "A visitor answers questions, sees a price and leaves a warm lead.",
-          "includes": ["questions and pricing logic", "price and time range", "lead with answers to your Telegram and database", "embedding into your site"]
+          "title": "Lead quiz",
+          "price": "5 000",
+          "term": "4 days",
+          "text": "A visitor answers a few questions, sees a price range and leaves a warm request.",
+          "includes": ["up to 6 questions with a progress bar", "price and time range calculation", "request to your Telegram or a spreadsheet", "mobile-friendly page"]
+        },
+        {
+          "group": "leads",
+          "title": "Telegram bot for requests",
+          "price": "4 500",
+          "term": "3 days",
+          "text": "The bot takes requests and sends them to you right away with all the answers.",
+          "includes": ["menu of up to 5 items and a request form", "phone and required-field checks", "notification to you or your work chat", "launch on your server"]
+        },
+        {
+          "group": "sales",
+          "title": "Price calculator for your site",
+          "price": "6 000",
+          "term": "5 days",
+          "text": "Clients pick the options and see the price at once; the total comes to you with the request.",
+          "includes": ["up to 8 calculation parameters", "formulas and coefficients from your price list", "request with the total to Telegram or a spreadsheet", "you change prices without a developer"]
         },
         {
           "group": "sales",
           "title": "Calculator and quotes from your price list",
           "price": "12 000",
-          "term": "5–7 days",
-          "text": "A manager prices a job in 2 minutes and sends a ready quote.",
-          "includes": ["price list moved to an Excel sheet", "pricing with coefficients", "PDF quote and Excel estimate", "price updates without a developer"]
+          "term": "5 days",
+          "text": "A manager prices a job in 2 minutes and sends the client a ready quote.",
+          "includes": ["price list in Excel, up to 100 items", "calculation with coefficients, discount and VAT", "PDF quote and Excel estimate", "price updates without a developer"]
         },
         {
-          "group": "leads",
-          "title": "AI chatbot for bookings",
-          "price": "14 000",
-          "term": "5–7 days",
-          "text": "Answers customers from your knowledge base and books them in.",
-          "includes": ["knowledge base and tone", "Telegram and VK", "booking with time checks", "a notification for every booking"]
+          "group": "ops",
+          "title": "Turnkey web app",
+          "price": "30 000",
+          "term": "14 days",
+          "text": "A tracker or portal where your team and clients see tasks, reports and progress.",
+          "includes": ["spec: roles, sections and scenarios", "login and up to 3 roles with different rights", "database, server and automated tests", "launch on your server with HTTPS"]
         }
       ],
       "extraTitle": "Also",

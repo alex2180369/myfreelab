@@ -25,6 +25,33 @@
     }
   },
   {
+    "id": "auto-check",
+    "group": "leads",
+    "url": "https://auto.myfreelab.ru",
+    "image": "/images/auto-check.webp",
+    "color": "#0b1017",
+    "watermark": "VIN",
+    "stack": ["HTML", "CSS", "JavaScript", "UX-тексты", "PDF-лид-магнит"],
+    "ru": {
+      "kicker": "Веб-приложение, UX-тексты и лид-магнит",
+      "title": "Перед сделкой: проверка б/у авто",
+      "lead": "Покупатель за 15 минут проходит восемь юридических проверок по официальным реестрам и получает отчёт: есть ли риск, чем он грозит и что сделать до сделки.",
+      "task": "Залог, розыск, запрет на регистрацию и долги владельца проверяются на разных сайтах, а их ответы написаны юридическим языком. Человек без опыта не понимает, опасна ли находка и что с ней делать.",
+      "solution": "Пошаговый чек-лист: на каждом шаге ссылка на ГИБДД, ФССП, реестр залогов или Федресурс и подсказка, что ввести. Ответ одной кнопкой, в конце отчёт со светофором, планом действий и пояснением по каждой проверке, печать в PDF. Тексты выводов написаны по правилам UX: вывод в одну строку, пояснение, следующий шаг, без запугивания и без гарантий. Данные остаются в браузере. В комплекте лид-магнит: PDF-чек-лист «8 проверок до задатка» на 5 страниц в стиле приложения — его берут с собой на осмотр, а последняя страница ведёт обратно в приложение.",
+      "result": "Понятный вывод вместо восьми вкладок с реестрами и чек-лист, который можно распечатать или сохранить в телефоне. Демо-отчёты показывают результат в разных ситуациях, данные в них вымышленные.",
+      "extra": { "label": "Чек-лист PDF", "href": "https://auto.myfreelab.ru/files/chek-list-pered-pokupkoy-bu-avto.pdf" }
+    },
+    "en": {
+      "kicker": "Web app, UX writing and lead magnet",
+      "title": "Before the deal: used car check",
+      "lead": "In 15 minutes a buyer runs eight legal checks against official Russian registries and gets a report: is there a risk, what it means and what to do before paying.",
+      "task": "Pledges, police search, registration bans and owner debts live on different sites, and their answers are written in legal language. A first-time buyer cannot tell whether a finding is dangerous or what to do about it.",
+      "solution": "A step-by-step checklist: each step links to the official registry and explains what to enter. One tap to record the answer, then a traffic-light report with an action plan, an explanation for every check and PDF export. Result copy follows UX writing rules: one-line verdict, short explanation, next step, no scare tactics and no guarantees. Data stays in the browser. It comes with a lead magnet: a 5-page PDF checklist “8 checks before the deposit” in the app's style — buyers take it to the viewing, and its last page leads back to the app.",
+      "result": "A clear verdict instead of eight registry tabs, plus a checklist to print or keep on the phone. Demo reports show results for different situations, with fictional data.",
+      "extra": { "label": "PDF checklist", "href": "https://auto.myfreelab.ru/files/chek-list-pered-pokupkoy-bu-avto.pdf" }
+    }
+  },
+  {
     "id": "prorab",
     "group": "ops",
     "url": "https://prorab.myfreelab.ru",
